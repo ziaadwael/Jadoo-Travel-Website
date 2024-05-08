@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jadoo - Travel Website" />
+    <meta name="keywords" content="Travel,World,Enjoy,Jadoo" />
+    <!-- Font awesome Library -->
+    <link rel="stylesheet" href="./styles/css/all.min.css">
+    <!-- Normalize CSS Link -->
+    <link rel="stylesheet" href="./styles/css/normalize.css" />
+    <!-- TailwindCSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jadoo - Travel Website</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="Hero-Section relative w-screen min-h-[55vh] max-xl:h-[100vh] after:content-[''] after:absolute after:-top-0 after:-right-[55%] after:bg-[url('/styles/images/Decore.png')] after:w-[100%] after:h-[100%] after:-z-10 overflow-x-hidden max-xl:after:right-[-32%] max-lg:after:right-[-35%] max-md:after:hidden overflow-hidden" id="hero">
+      <header class="w-[80%] mx-[10%] pt-5 flex items-center justify-between">
+        <div class="logo">
+          <h1 class="text-3xl font-extrabold"><a href="#">Jad<span class="text-orange-500">oo</span></a></h1>
+        </div>
+        <nav class="nav-links max-md:hidden">
+          <ul class="flex items-center justify-center gap-5">
+            <li><a href="#Services-Section" class="hover:text-orange-500 hover:transition-colors">Services</a></li>
+            <li><a href="#Destination-Section" class="hover:text-orange-500 hover:transition-colors">Destinations</a></li>
+            <li><a href="#Booking-Section" class="hover:text-orange-500 hover:transition-colors">Bookings</a></li>
+            <li><a href="#Testimonials-Section" class="hover:text-orange-500 hover:transition-colors">Testimonials</a></li>
+            <li><a href="#" class="hover:text-orange-500 hover:transition-colors">Login</a></li>
+            <li><a href="#" class="hover:text-orange-500 hover:transition-colors border-2 border-black px-2 py-1 rounded-md">Sign up</a></li>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars fa-2x hidden max-md:inline-block" id="menu-icon"></i>
+      </header>
+      <section class="w-[80%] mx-[10%] pt-5 flex items-center justify-center flex-row gap-[10%] text-center max-lg:pt-[100px] max-md:flex-col-reverse max-md:pt-[10px] max-md:gap-2.5" id="hero">
+        <main class="desc flex items-center flex-col gap-5 w-[45%] max-md:w-[60%]">
+          <h3 class="text-[#DF6951] uppercase font-bold max-lg:text-sm max-md:text-[12px]">Best Destinations around the world</h3>
+          <h1 class="text-[#181E4B] text-5xl font-bold font-serif max-lg:text-5xl max-[900px]:text-3xl max-sm:text-2xl">Travel, <span class="border-b-[5px] border-[#DF6951] rounded-lg">enjoy</span> <br> and live a new <br> and full life</h1>
+          <p class="text-gray-500 font-medium w-[400px] max-lg:w-[100%] max-md:text-[13px]">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+          <div class="cta flex items-center gap-5">
+            <button class="bg-orange-400 p-2.5 text-white rounded-xl transition-all hover:scale-110 max-md:w-[120px] max-md:p-1"><a href="#">Find Out More</a></button>
+            <button><a href="#" class="flex items-center gap-2.5 transition-all hover:text-orange-500 hover:text-lg max-md:w-[150px]"><span><i class="fa-solid fa-circle-play fa-2x text-[#DF6951]"></i></span> Play Demo</a></button>
+          </div>
+        </main>
+        <div class="img w-[45%]">
+          <img src="./styles/images/image-model.png" alt="Model-Photo" loading="lazy">
+        </div>
+      </section>
+      <aside class="w-[25vw] h-screen bg-orange-300 absolute top-0 left-0 z-50 translate-x-[-100%] transition-all max-md:w-[30vw] max-sm:w-[40vw]" id="Sidebar">
+        <ul class="pt-[10rem] w-full">
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#Services-Section">Services</a></li>
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#Destination-Section">Destinations</a></li>
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#Booking-Section">Bookings</a></li>
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#Testimonials-Section">Testimonials</a></li>
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#">Login</a></li>
+            <li class="bg-[#222] text-white mb-2 p-2 text-center mx-5 rounded-md"><a href="#">Sign up</a></li>
+        </ul>
+      </aside>
+    </section>
+    <!-- Services Section -->
+    <section class="Services-Section w-screen flex items-center justify-center flex-col gap-5 max-md:mt-[50px]" id="Services-Section">
+      <h3 class="uppercase text-gray-500 font-bold tracking-wide">Category</h3>
+      <h1 class="text-[#14183E] font-extrabold text-3xl max-sm:text-2xl">We Offer Best Services</h1>
+      <div class="category-container w-[70%] mx-auto flex items-center justify-center flex-row gap-10 mt-[30px] max-md:flex-col max-md:gap-2.5">
+        <div class="category w-[250px] h-[250px] flex items-center justify-center flex-col gap-5 rounded-3xl cursor-pointer shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+        <img src="./styles/images/category-1.png" loading="lazy" alt="Category-img" class="w-[75px]">
+          <h1 class="font-bold font-sans">Calculated Weather</h1>
+          <p class="text-center font-medium text-gray-600">Built Wicket longer admire do barton vanity itself do in it.</p>
+        </div>
+        <div class="category w-[250px] h-[250px] flex items-center justify-center flex-col gap-5 rounded-3xl cursor-pointer shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/category-2.png" loading="lazy" alt="Category-img" class="w-[75px]">
+          <h1 class="font-bold font-sans">Best Flights</h1>
+          <p class="text-center font-medium text-gray-600 mx-5">Engrossed listening. Park gate sell they west hard for the.</p>
+        </div>
+        <div class="category w-[250px] h-[250px] flex items-center justify-center flex-col gap-5 rounded-3xl cursor-pointer shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/category-3.png" loading="lazy" alt="Category-img" class="w-[75px]">
+          <h1 class="font-bold font-sans">Local Events</h1>
+          <p class="text-center font-medium text-gray-600 mx-5">Engrossed listening. Park gate sell they west hard for the.</p>
+        </div>
+        <div class="category w-[250px] h-[250px] flex items-center justify-center flex-col gap-5 rounded-3xl cursor-pointer shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/category-4.png" loading="lazy" alt="Category-img" class="w-[75px]">
+          <h1 class="font-bold font-sans">Calculated Weather</h1>
+          <p class="text-center font-medium text-gray-600 mx-5">We deliver outsourced aviation services for military customers.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Destination Section -->
+    <section class="Destination-Section relative w-screen flex items-center justify-center flex-col gap-5 mt-[50px]" id="Destination-Section">
+      <h3 class="uppercase text-gray-500 font-bold tracking-wide">Top Selling</h3>
+      <h1 class="text-[#14183E] font-extrabold text-3xl max-sm:text-2xl">Top Destinations</h1>
+      <div class="cards-container w-[70%] mx-auto flex items-center justify-center flex-row gap-10 mt-[30px] after:content-[url('./styles/images/destinations-decore.png')] after:absolute after:right-[20%] after:-z-10 max-md:flex-col max-md:gap-2.5">
+        <div class="w-[250px] h-[350px] pb-[30px] relative flex items-center justify-center flex-col gap-5 rounded-3xl shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/rome.jpg" loading="lazy" alt="Rome Photo" class="w-full h-[80%] rounded-lg">
+          <div class="desc flex items-center justify-center flex-row relative w-full">
+            <h3 class="absolute left-2.5 font-bold">Rome,Italy</h3>
+            <h3 class="absolute right-2.5 text-blue-500 font-bold">$5.42K</h3>
+          </div>
+          <div class="price flex items-center justify-center flex-row gap-1 absolute left-3 bottom-2.5">
+            <i class="fa-solid fa-paper-plane text-blue-400"></i>
+            <h2 class="text-xl">10 Days Trip</h2>
+          </div>
+        </div>
+        <div class="w-[250px] h-[350px] pb-[30px] relative flex items-center justify-center flex-col gap-5 rounded-3xl shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/london.jpg" loading="lazy" alt="Europe Photo" class="w-full h-[80%] rounded-lg">
+          <div class="desc flex items-center justify-center flex-row relative w-full">
+            <h3 class="absolute left-2.5 font-bold">London, UK</h3>
+            <h3 class="absolute right-2.5 text-blue-500 font-bold">$4.2K</h3>
+          </div>
+          <div class="price flex items-center justify-center flex-row gap-1 absolute left-3 bottom-2.5">
+            <i class="fa-solid fa-paper-plane text-blue-400"></i>
+            <h2 class="text-xl">12 Days Trip</h2>
+          </div>
+        </div>
+        <div class="w-[250px] h-[350px] pb-[30px] relative flex items-center justify-center flex-col gap-5 rounded-3xl shadow-lg transition-all hover:transition-all hover:shadow-2xl hover:scale-105">
+          <img src="./styles/images/europe.jpg" loading="lazy" alt="Europe Photo" class="w-full h-[80%] rounded-lg">
+          <div class="desc flex items-center justify-center flex-row relative w-full">
+            <h3 class="absolute left-2.5 font-bold">Full Europe</h3>
+            <h3 class="absolute right-2.5 text-blue-500 font-bold">$15K</h3>
+          </div>
+          <div class="price flex items-center justify-center flex-row gap-1 absolute left-3 bottom-2.5">
+            <i class="fa-solid fa-paper-plane text-blue-400"></i>
+            <h2 class="text-xl">28 Days Trip</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Section -->
+    <section class="Booking-Section w-[70%] mx-auto flex items-center justify-center flex-row gap-10 mt-[100px] max-lg:flex-col" id="Booking-Section">
+      <div class="left flex justify-center flex-col gap-5 ">
+        <h3 class="font-bold text-gray-600">Easy and Fast</h3>
+        <h1 class="text-[#14183E] text-5xl font-extrabold">Book your next trip <br>in 3 easy steps</h1>
+        <div class="step flex items-center justify-center flex-row gap-5">
+          <img src="./styles/images/choose-destination.png" alt="Choose Destination Img">
+          <div class="desc">
+            <h1 class="font-bold text-gray-500">Choose Destination</h1>
+            <p class="w-[60%] text-lg max-md:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+        <div class="step flex items-center justify-center flex-row gap-5">
+          <img src="./styles/images/make-payment.png" alt="Make Payment Icon">
+          <div class="desc">
+            <h1 class="font-bold text-gray-500">Make Payment</h1>
+            <p class="w-[60%] text-lg max-md:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+        <div class="step flex items-center justify-center flex-row gap-5">
+          <img src="./styles/images/Reach-Airpot.png" alt="Reach-Airport icon">
+          <div class="desc">
+            <h1 class="font-bold text-gray-500">Reach Airport on Selected Date</h1>
+            <p class="w-[60%] text-lg max-md:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+          </div>
+        </div>
+      </div>
+      <div class="right w-[300px] h-[320px] shadow-2xl rounded-3xl shadow-blue-100 relative px-10 max-lg:mr-[5rem] mx-auto ">
+        <img src="./styles/images/book-img.jpg" alt="Booking img" class="w-screen py-2">
+        <div class="info flex justify-center flex-col gap-5">
+          <h1>Trip To Greece</h1>
+          <p>14-29 June| <span>by Robbin joseph</span></p>
+          <div class="icons flex items-center flex-row gap-5">
+            <i class="fa-solid fa-earth-europe bg-[#DDD] p-2.5 rounded-full"></i>
+            <i class="fa-regular fa-map bg-[#DDD] p-2.5 rounded-full"></i>
+            <i class="fa-regular fa-paper-plane bg-[#DDD] p-2.5 rounded-full"></i>
+          </div>
+          <div class="footer flex items-center justify-center gap-5 absolute bottom-5">
+            <i class="fa-regular fa-building hover:text-blue-400 cursor-pointer transition-all hover:scale-110"></i>
+            <h1 class="font-bold text-gray-600">24 people going</h1>
+            <i class="fa-regular fa-heart hover:text-blue-400 cursor-pointer transition-all hover:scale-110"></i>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- Testimonilas Section -->
+    <section class="Testimonilas-Section w-screen mt-[100px]" id="Testimonials-Section">
+      <div class="testimonilas-container w-[80%] mx-auto flex items-center justify-center flex-row gap-5 max-lg:flex-col">
+        <div class="left w-[45%] h-[300px] flex flex-col gap-5 relative max-lg:w-full">
+          <h3 class="uppercase text-gray-600 font-bold">Testimonials</h3>
+          <h1 class="text-5xl text-[#14183E] font-bold">What people say <br>About Us</h1>
+          <div class="slider-points absolute bottom-5 max-lg:bottom-[30%] max-sm:bottom-[15%]">
+            <span class="inline-block w-4 h-4 rounded-full bg-gray-500 cursor-pointer mr-5 transition-all hover:bg-gray-800 hover:scale-125"></span>
+            <span class="inline-block w-4 h-4 rounded-full bg-gray-200 cursor-pointer mr-5 transition-all hover:bg-gray-800 hover:scale-125"></span>
+            <span class="inline-block w-4 h-4 rounded-full bg-gray-200 cursor-pointer mr-5 transition-all hover:bg-gray-800 hover:scale-125"></span>
+          </div>
+        </div>
+        <div class="right w-[45%] h-[300px] shadow-2xl rounded-lg p-5 relative before:content-[url('./styles/images/avatar.png')] before:absolute before:-top-10 before:-left-10 after:z-10 max-lg:w-[80%] max-lg:mx-10 max-sm:w-[90%]">
+          <q class="font-bold text-xl max-sm:text-lg">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</q>
+          <div class="author absolute bottom-5">
+            <h1 class="font-bold text-2xl text-gray-700">Mike taylor</h1>
+            <h3>Lahore, Pakistan</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sponsers Section -->
+    <section class="sponsers-Section w-screen">
+      <div class="sponsers-container w-[80%] h-[200px] mt-[100px] mx-auto flex items-center justify-center gap-10">
+        <img src="./styles/images/sponser-1.png" loading="lazy" alt="Sponser Logo" class="cursor-pointer w-[200px] h-[100px] hover:shadow-xl hover:rounded-lg max-md:w-[80px] max-sm:w-[40px] ">
+        <img src="./styles/images/sponser-2.png" loading="lazy" alt="Sponser Logo" class="cursor-pointer w-[200px] h-[100px] hover:shadow-xl hover:rounded-lg max-md:w-[80px] max-sm:w-[40px] ">
+        <img src="./styles/images/sponser-3.png" loading="lazy" alt="Sponser Logo" class="cursor-pointer w-[200px] h-[100px] hover:shadow-xl hover:rounded-lg max-md:w-[80px] max-sm:w-[40px] ">
+        <img src="./styles/images/sponser-4.png" loading="lazy" alt="Sponser Logo" class="cursor-pointer w-[200px] h-[100px] hover:shadow-xl hover:rounded-lg max-md:w-[80px] max-sm:w-[40px]">
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="Contact-Section w-screen h-[300px] mt-[100px] max-md:h-[500px]" id="Contact-Section">
+      <div class="contact-container w-[60%] h-full mx-auto flex items-center justify-center flex-col gap-5 bg-gray-300 bg-opacity-75 rounded-2xl relative after:content-[url('./styles/images/contact-icon.png')] after:absolute after:top-[-6%] after:right-[-4%] after:z-50 max-md:after:right-[-10%] max-sm:after:right-[-3%] max-sm:w-[90%]">
+        <h1 class="text-3xl font-bold text-[#5E6282] text-center max-md:mx-2.5">Subscribe to get information, latest news and other <br>interesting offers about Jadoo</h1>
+        <div class="input-container w-full flex items-center justify-center flex-row gap-5 max-sm:flex-col">
+          <div class="input w-[40%] flex items-center justify-center flex-row relative max-sm:w-[80%]">
+            <i class="fa-regular fa-envelope absolute left-[2%]"></i>
+            <input type="text" placeholder="Your Email" class="w-full py-2.5 outline-none border-none rounded-md text-center">
+          </div>
+          <button class="bg-[#FF946D] text-white py-2.5 px-5 rounded-md">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-Section w-screen flex items-center justify-center flex-col mt-[100px] relative pb-20" id="footer-Section">
+      <div class="footer-container w-[80%] mx-auto flex items-center justify-center flex-row gap-16 max-md:gap-5 max-sm:flex-col">
+        <div class="jadoo flex items-center justify-center flex-col gap-5">
+          <h1 class="text-[#181E4B] font-bold text-5xl max-md:text-2xl">Jadoo.</h1>
+          <p class="text-[#5E6282]">Book your trip in minute, get full <br>Control for much longer.</p>
+        </div>
+        <div class="company flex items-center justify-center flex-col gap-2">
+          <h1 class="font-bold">Company</h1>
+          <div class="links flex justify-center flex-col gap-2">
+            <a href="#" class="transition-all hover:text-[#5E6282]">About</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Careers</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Mobile</a>
+          </div>
+        </div>
+        <div class="contact flex items-center justify-center flex-col gap-2">
+          <h1 class="font-bold">Contact</h1>
+          <div class="links flex justify-center flex-col gap-2">
+            <a href="#" class="transition-all hover:text-[#5E6282]">Help/FAQ</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Press</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Affilates</a>
+          </div>
+        </div>
+        <div class="more flex items-center justify-center flex-col gap-2">
+          <h1 class="font-bold">More</h1>
+          <div class="links flex justify-center flex-col gap-2">
+            <a href="#" class="transition-all hover:text-[#5E6282]">Airlinefees</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Airline</a>
+            <a href="#" class="transition-all hover:text-[#5E6282]">Low fare tips</a>
+          </div>
+        </div>
+        <div class="social-links flex items-center justify-center flex-col gap-2">
+          <div class="icons flex items-center justify-center flex-row gap-2.5">
+            <a href="#" class="p-2.5 rounded-full transition-all hover:text-[#5E6282] hover:scale-105">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="p-2.5 rounded-full transition-all hover:text-[#5E6282] hover:scale-105">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" class="p-2.5 rounded-full transition-all hover:text-[#5E6282] hover:scale-105">
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <h1 class="font-bold text-2xl text-[#5E6282]">Discover our app</h1>
+          <div class="play-store flex gap-10">
+            <a href="#"><i class="fa-brands fa-google-play fa-2x hover:text-[#5E6282]"></i></a>
+            <a href="#"><i class="fa-brands fa-app-store fa-2x hover:text-[#5E6282]"></i></a>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-[#5E6282] mt-5 absolute bottom-5">All rights reserved@jadoo.co</h1>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script>
+      $("#menu-icon").click(()=> {
+        $("#Sidebar").toggleClass("translate-x-0");
+      })
+    </script>
+  </body>
+</html>
